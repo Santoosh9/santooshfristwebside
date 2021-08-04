@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Coursework</title>
+	<meta name="Santosh Gajurel" content="My Webpage">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style> 
+		
+
+	#ss{
+				width:240px;
+			height: 340px;
+			
+			background-color: #000;
+			color: #e6fff3;
+			top: 50%;
+			left: 35%;
+			position: absolute;
+			box-sizing: border-box;
+			transform: translate(-50%,-50%);
+			padding: 40px;
+		}
+
+		#sss{
+			width: 120px;
+			height: 120px;
+			border-radius: 20%;
+			top: -50px;
+			left: 60px;
+			/*right: 20px;*/
+			/*left:calc(-50%,-50%);*/
+			transform: translate(-5%,-30%);
+			
+
+
+		}
+
+		footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  /* background-color: red;*/
+    color: orange;
+   text-align: center;
+}
+/*.sgf{
+	text-align: center;
+	height: 100px;
+	background-color: yellow;
+}*/
+</style>
+	</style>
+</head>
+<body>
+
+	
+		<div class="top">
+			
+		<nav>
+			<img src="logo.png">
+			<ul>
+				
+				<li ><a href="home.html">Home</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="cv.html">CV</a></li>
+				<li><a href="Reserch.html">Reserch</a></li>
+				<li class="active"><a href="contact.html">Contact</a></li>
+		 </ul> 
+	</nav>
+		</div>
+	
+<div id="ss">
+	<img id="sss" src="pp.png">
+	<form name="form" onsubmit="formvalidation()">
+  <label for="fname">Username:</label><br>
+  <input type="text" name="Username" placeholder="" ><br>
+  <label for="fname">Email:</label><br>	
+  <input type="email" name="email" placeholder=""><br>
+  <label for="fname">Password:</label><br>	
+  <input type="Password" name="Password" placeholder=""><br> <br>	
+  <!-- <button><label for="fname">Submit</label></button><br> -->
+ <!--  <a href="#">Forgot Password</a><br>
+  <a href="#">New Account</a><br> -->
+  <input type="submit"  value="submit">
+   </form>
+
+</div>
+
+<script type="text/javascript">
+	function formvalidation(){
+		var nam=document.form.Username.value;
+		var nam=document.form.email.value;
+		var nam=document.form.Password.value;
+			if (nam == "") {
+			alert("please input all the fields");
+			return false;
+		}else{
+			alert('thank you for register!');
+			return true;
+		}
+	}
+	
+	
+
+</script>
+	 <!-- 	<div class="sgf">
+	 		<h1>If you want to be know more information  about me </h1>
+	 		<h3>Contact:9823677179</h3>
+	 	</div> -->
+<footer>
+  <h4>Thanks for visting my side.</h4>
+
+  	
+  		<li>
+  		<a href="https://www.facebook.com/santosh.gajurel.71" class="fa fa-facebook"></a>
+  		</li>
+  		<p>
+   	@Santosh Galurel</p>
+   	
+   	<button onclick="topFunction()" id="myBtn" title="Go to top" style="float: left;"> Go To Top</button>
+   	<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  
+  
+</footer>
+</body>
+</html>

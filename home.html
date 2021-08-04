@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Coursework</title>
+	<meta name="Santosh Gajurel" content="My Webpage">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style >.middle{ 
+			height: 1200px;
+			width: auto;
+			text-align: center;
+		}
+		.middle .sss {
+			font-family: fantasy;
+			font-size: 50px;
+			color: red;
+			
+		</style>
+</head>
+<body>
+
+	
+		<div class="top">
+			
+		<nav>
+			<img src="logo.png">
+			<ul>
+				
+				<li class="active"><a href="home.html">Home</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="cv.html">CV</a></li>
+				<li><a href="Reserch.html">Reserch</a></li>
+				<li><a href="contact.html">Contact</a></li>
+		 </ul> 
+	</nav>
+		
+	</div>
+	</div>
+	<div class="middle">
+		<h1> <div class="sss" >
+		<p><br>Hello I am Santosh Gajurel</p>
+
+	</div> 
+		<div class="sss" id="name">Welcome To My Home Page.<br>
+			<br><br><br><br><br><br><br><br>
+		</div>
+
+		<!-- <img class="img" src="six.jpg" align="center" style="height: 200px;"> -->
+		</h1>
+			
+			<h1 id="target" ></h1>
+	</div>
+
+	
+		<script >
+		function displaydate()
+		{
+			var todays_date=new Date();
+			document.getElementById("target").innerHTML=todays_date;
+			setTimeout(displaydate);
+		}
+		displaydate();
+	</script>
+
+		<footer>
+  <h4>Thanks for visting my side.</h4>
+
+  	
+  		<li>
+  		<a href="https://www.facebook.com/santosh.gajurel.71" class="fa fa-facebook"></a>
+  		</li>
+  		<p>
+   	@Santosh Galurel</p>
+   	<button onclick="topFunction()" id="myBtn" title="Go to top"> Go To Top</button>
+   	<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  
+  
+</footer>
+</body>
+</html>
